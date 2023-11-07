@@ -1,0 +1,21 @@
+#activate miniconda
+source /nobackup/sdfs27/apps/miniconda/bin/activate
+
+#initiate mamba environment
+mamba init
+
+# Create the environment and download the conda package
+mamba create --name [env_name] [your_software]
+
+# To use it in a script or command line, load miniconda and activate the environment
+source /nobackup/sdfs27/apps/miniconda/bin/activate
+conda activate /nobackup/sdfs27/apps/miniconda/envs/[your_software]
+
+#or (mamba activate does not work in a script)
+mamba activate /nobackup/sdfs27/apps/miniconda/envs/[your_software]
+
+README for when miniconda is downloaded
+
+1.) Download linux64bit miniconda https://docs.conda.io/projects/miniconda/en/latest/
+2.) Run installition script
+3.) Read README
